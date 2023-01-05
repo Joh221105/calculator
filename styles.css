@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.display {
+    width: 20.25rem;
+    height:2rem;
+    margin: .5rem;
+    margin-top:1rem;
+    border:1px #D3D3D3 solid;
+    line-height: 2rem;
+    font-size: 2rem;
+    color:#6495ED;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#numInput{
+    padding-right:.5rem
+}
+
+.numbers{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.calculator {
+     border: 1px #D3D3D3 solid;
+     width:21.5rem;
+     height:20rem;
+     box-shadow: 1px 1px #D3D3D3;
+}
+
+.operators {
+    display: flex;
+    justify-content: space-evenly;
+    color:black;
+}
+
+#add, #subtract, #multiply, #divide {
+    width:4rem;
+    text-align: center;
+    background-color: #D3D3D3;
+    height:2rem;
+    line-height: 2;
+}
+
+span {
+    border: 1px #D3D3D3 solid;
+    margin:10px;
+    height: 30px;
+    line-height: 2
+
+}
+
+span:active {
+    box-shadow: 1px 1px green;
+}
+#equal {
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    grid-column: 4;
+    background-color: #6495ED;
+    border: 1px #D3D3D3 solid;
+    margin:10px;
+    line-height: 11;
+    color:white
+}
